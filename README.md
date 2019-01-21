@@ -1,2 +1,2 @@
 # shelter_animal_machine_learning
-Machine learning project to predict shelter animal outcomes, based on the former Kaggle competition at https://www.kaggle.com/c/shelter-animal-outcomes
+Machine learning project to predict shelter animal outcomes using Python, based on the former Kaggle competition at https://www.kaggle.com/c/shelter-animal-outcomes. The project uses pandas to refine the data, matplotlib and pandas for EDA, and scikit-learn to run machine learning algorithms (including logistic regression, decision trees, random forest, XGBoost, and Multinomial Naive Bayes).
