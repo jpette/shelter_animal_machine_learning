@@ -5,7 +5,8 @@ This machine learning project predicted shelter animal outcomes using Python, ba
 
 Our initial look at the data reveals 26,729 rows. We set out to predict the outcomes for individual shelter animals, which were extremely unbalanced:
 
-![unbalanced](https://github.com/jpette/shelter_animal_machine_learning/images/unbalanced.jpg)
+![unbalanced](./images/unbalanced.jpg)
+<img src="./images/unbalanced.jpg">
 
 To adjust for this, we tested machine learning models using both the raw data and data that oversampled from the minority classes.
 
