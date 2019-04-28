@@ -17,7 +17,7 @@ To evaluate prediction performance, we used weighted f1-score, which is calculat
 
 Best performing classifiers with confidence intervals:
 
-![confints](https://github.com/jpette/shelter_animal_machine_learning/tree/master/images/confints.jpg "F1 Scores and Confidence Intervals")
+![confints](https://github.com/jpette/shelter_animal_machine_learning/tree/master/images/confints.png "F1 Scores and Confidence Intervals")
 
 The f1-scores for the classifiers fit with raw data performed substantially worse than the random forest classifiers fit with oversampled data. There was little difference in performance between the random forest and XGBoost classifiers, but random forest was much faster, so we choose random forest for optimization. We found that the best parameters included a maximum depth of 40, a minimum sample split of 4, and Gini impurity to measure the split quality.
 
