@@ -5,7 +5,7 @@ This machine learning project predicted shelter animal outcomes using Python, ba
 
 Our initial look at the data reveals 26,729 rows. We set out to predict the outcomes for individual shelter animals, which were extremely unbalanced:
 
-![unbalanced](https://github.com/jpette/shelter_animal_machine_learning/tree/master/images/unbalanced.jpg "Bar Chart: Unbalanced Classes")
+![unbalanced](https://github.com/jpette/shelter_animal_machine_learning/tree/master/images/unbalanced.jpg)
 
 To adjust for this, we tested machine learning models using both the raw data and data that oversampled from the minority classes.
 
@@ -17,10 +17,10 @@ To evaluate prediction performance, we used weighted f1-score, which is calculat
 
 Best performing classifiers with confidence intervals:
 
-![confints](https://github.com/jpette/shelter_animal_machine_learning/tree/master/images/confints.png "F1 Scores and Confidence Intervals")
+![confints](https://github.com/jpette/shelter_animal_machine_learning/tree/master/images/confints.png)
 
 The f1-scores for the classifiers fit with raw data performed substantially worse than the random forest classifiers fit with oversampled data. There was little difference in performance between the random forest and XGBoost classifiers, but random forest was much faster, so we choose random forest for optimization. We found that the best parameters included a maximum depth of 40, a minimum sample split of 4, and Gini impurity to measure the split quality.
 
 We further tested performance by examining the log loss function of our classifiers. Log loss analyzes accuracy, as it penalizes false predictions (a smaller value is better). The log loss of the dumb classifier was 20.62. We checked the log loss of our top performing classifiers using raw data, and found substantial improvement with all:
 
-![chart](https://github.com/jpette/shelter_animal_machine_learning/tree/master/images/chart.jpg "Precision and Log Loss Chart")
+![chart](https://github.com/jpette/shelter_animal_machine_learning/tree/master/images/chart.jpg)
